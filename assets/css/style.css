@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(56, 78, 47);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: white;
+    padding: 50px;
+
+}
+
+.rojos {
+    width: auto;
+    height: 300px;
+}
+
+.title {
+    margin: 10px;
+}
+
+.options {
+    display: flex;
+    gap: 12px;
+    margin: 20px;
+}
+
+label {
+    font-size: large;
+}
+
+.quantity1 {
+    width: 40px;
+}
+
+#price1 {
+    margin: 10px;
+}
+
+.calculate {
+    background-color: rgb(89, 145, 66);
+    width: 160px;
+    height: 40px;
+    color: white;
+    font-size: larger;
+    border: solid 2px green;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .5s;
+    margin-top: 20px;
+}
+
+.calculate:hover {
+    background-color: rgb(59, 131, 30);
+    border: solid 2px rgb(105, 173, 78);
+    transition: .5s;
+}
+
+
+.solution {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: white;
+    padding: 50px;
+    gap: 20px;
+}
+
+.final-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#color2 {
+    margin-right: 10px;
+}
+
+.chosen-color {
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 50%;
+    /* background-color: transparent; */
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Intro JS</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="container">
+
+            <!-- esta es la tarjeta de selección -->
+            <div class="card">
+                <img src="/assets/img/rojos.webp" alt="" class="rojos">
+                <h2 class="title">Audífonos SONY ZX</h2>
+                <div class="options">
+                    <label for="quantity">Cantidad:</label>
+                    <input type="number" name="quantity" class="quantity1" min="1" value="1">
+                    <label for="color">Color:</label>
+                    <select name="color" id="color">
+                        <option value="red">Rojo</option>
+                        <option value="blue">Azul</option>
+                        <option value="black">Negro</option>
+                    </select>
+                </div>
+                <h2 id="price1">Precio unitario: $<span class="price1">81.490</span></h2>
+
+                <button class="calculate" onclick="calcularTotal()">Calcular Total</button>
+            </div>
+            <!-- fin tarjeta de selección -->
+
+
+            <div class="solution">
+                <h1>Detalle de tu compra:</h1>
+                <div class="total-price">
+                    <h2 id="price2">Total a pagar: $<span class="price2">0</span></h2>
+                </div>
+
+                <div class="total-quantity">
+                    <h2 id="quantity2">Cantidad: <span class="quantity2">0</span></h2>
+                </div>
+
+                <div class="final-color">
+                    <h2 id="color2">Color: <span class="color2"></span></h2>
+                    <div class="chosen-color"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/index.js"></script>
+
+</body>
+
+</html>
