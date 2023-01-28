@@ -19,4 +19,15 @@ function calcularTotal() {
     precioTotal.innerHTML = (+cantidad * precio).toLocaleString();
     cantidadTotal.innerHTML = cantidad
     colorSeleccionado.style.backgroundColor = color
+
+    //CAMBIO DE IMAGEN
+    const image = document.querySelector(".rojos")
+
+    if (color == "blue") {
+        image.src = "assets/img/azules.webp"
+    } else if (color == "black") {
+        image.src = "assets/img/negros.webp"
+    } else {
+        image.src = "assets/img/rojos.webp"
+    }
 }
